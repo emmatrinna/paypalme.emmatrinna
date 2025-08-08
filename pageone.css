@@ -1,0 +1,191 @@
+
+/* === Global Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f0f3fb;
+  color: #111;
+  padding-bottom: 120px;
+}
+
+/* === Header === */
+.header {
+  background: linear-gradient(135deg, #007bff, #0046a6);
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  padding: 0 5vw;
+  color: white;
+}
+
+.back-button {
+  font-size: 6vw;
+  cursor: pointer;
+}
+
+/* === Profile Picture === */
+.profile-section {
+  display: flex;
+  justify-content: center;
+  margin-top: -40px;
+}
+
+.profile-pic {
+  width: 18vw;
+  height: 18vw;
+  max-width: 70px;
+  max-height: 70px;
+  background-color: #9ddcff;
+  color: white;
+  font-weight: bold;
+  font-size: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+/* === Info Card === */
+.info-card {
+  background-color: white;
+  margin: 6vh 5vw;
+  border-radius: 15px;
+  padding: 5vw;
+  text-align: center;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+.username {
+  font-size: 5vw;
+  font-weight: bold;
+}
+
+.handle {
+  color: gray;
+  margin: 1vw 0 4vw;
+  font-size: 4vw;
+}
+
+.favorite-btn {
+  background-color: black;
+  color: white;
+  padding: 3vw 5vw;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 4vw;
+}
+
+/* === Avatars Section === */
+.connection-info {
+  text-align: center;
+  margin: 5vh 5vw;
+}
+
+.avatars {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.circle {
+  width: 10vw;
+  height: 10vw;
+  max-width: 40px;
+  max-height: 40px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5vw;
+  font-weight: bold;
+  border: 2px solid white;
+}
+
+.dark-blue {
+  background-color: #005eff;
+  margin-right: -10px;
+}
+
+.light-blue {
+  background-color: #9ddcff;
+  color: white;
+}
+
+/* === Transactions === */
+.transactions {
+  background-color: white;
+  margin: 3vh 5vw;
+  border-radius: 15px;
+  padding: 5vw;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+  font-size: 4vw;
+}
+
+.icon-text {
+  display: flex;
+  gap: 3vw;
+}
+
+.icon {
+  font-size: 5vw;
+}
+
+/* === Actions === */
+.actions {
+  background-color: white;
+  margin: 3vh 5vw;
+  border-radius: 15px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+}
+
+.report-btn,
+.block-btn {
+  width: 100%;
+  padding: 4vw 5vw;
+  border: none;
+  background: transparent;
+  font-size: 4vw;
+  text-align: left;
+  cursor: pointer;
+}
+
+.block-btn {
+  border-top: 1px solid #ddd;
+}
+
+/* === Send Button === */
+.send-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 5vw;
+  right: 5vw;
+  background-color: black;
+  color: white;
+  padding: 4vw;
+  font-size: 4.5vw;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/* === Larger Screens === */
+@media (min-width: 768px) {
+  .back-button { font-size: 24px; }
+  .profile-pic { width: 70px; height: 70px; font-size: 20px; }
+  .username { font-size: 22px; }
+  .handle { font-size: 16px; }
+  .favorite-btn { font-size: 16px; padding: 10px 20px; }
+  .circle { width: 40px; height: 40px; font-size: 14px; }
+  .transactions, .report-btn, .block-btn, .send-btn {
+    font-size: 16px;
+  }
+  .send-btn { padding: 16px; }
+}

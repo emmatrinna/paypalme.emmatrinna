@@ -1,0 +1,131 @@
+/* === Global Styles === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom right, #f2f2f2, #e6f0f0);
+  min-height: 100vh;
+  padding: 5vw;
+  position: relative;
+}
+
+/* === Header === */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 8vh;
+}
+
+.back-arrow {
+  font-size: 6vw;
+  cursor: pointer;
+}
+
+.amount-label {
+  font-size: 4vw;
+  color: #666;
+}
+
+/* === Profile Info === */
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 4vw;
+  margin-bottom: 5vh;
+}
+
+.avatar {
+  width: 14vw;
+  height: 14vw;
+  background-color: #4c63d2;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 6vw;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.username {
+  font-size: 5vw;
+  font-weight: bold;
+}
+
+.handle {
+  color: #666;
+  font-size: 4vw;
+}
+
+/* === Amount Input === */
+.amount-input {
+  font-size: 10vw;
+  border: none;
+  width: 100%;
+  margin: 4vh 0;
+  background: transparent;
+  outline: none;
+}
+
+/* === Currency Selector === */
+.currency-select {
+  font-size: 4.5vw;
+  padding: 2vw 4vw;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 8vh;
+}
+
+/* === Note and Button === */
+.note {
+  position: absolute;
+  bottom: 80px;
+  left: 5vw;
+  right: 5vw;
+  font-size: 4vw;
+  color: #555;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 12px 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+}
+
+
+.next-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 5vw;
+  padding: 3vw 6vw;
+  font-size: 4.5vw;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/* === Larger Screens === */
+@media (min-width: 768px) {
+  .back-arrow { font-size: 24px; }
+  .amount-label { font-size: 18px; }
+  .avatar { width: 60px; height: 60px; font-size: 28px; }
+  .username { font-size: 22px; }
+  .handle { font-size: 16px; }
+  .amount-input { font-size: 48px; }
+  .currency-select { font-size: 18px; }
+  .note { font-size: 16px; }
+  .next-btn { font-size: 16px; padding: 12px 24px; }
+}
